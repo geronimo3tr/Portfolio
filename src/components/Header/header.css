@@ -1,15 +1,16 @@
 header {
   background-color: black;
+  height: 60px;
 }
 
 nav {
   display: flex;
-  justify-content: center;
-  color: white;
-  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
 nav li {
   display: flex;
   text-decoration: none;
-  color: white;
+  font-weight: 600;
 }/*# sourceMappingURL=header.css.map */
