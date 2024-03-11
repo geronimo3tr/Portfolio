@@ -1,0 +1,15 @@
+header {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 10px;
+}
+nav li {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=header.css.map */
