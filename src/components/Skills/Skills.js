@@ -1,9 +1,13 @@
-function Skills() {
+function Skills(props) {
   return (
     <>
-      <div className="skill-bar">
-        <i className="fab fa-html5"></i>
-        <p></p>
+      <div className="skill-bar ">
+        <div className="progress-bar " style={{ width: props.progressLenght + "%" }}>
+          <div className="progress-bar-color" style={{ backgroundColor: props.color + "" }}>
+            {props.icon}
+            <p>{props.text}</p>
+          </div>
+        </div>
       </div>
     </>
   );
