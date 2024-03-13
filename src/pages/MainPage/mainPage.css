@@ -7,4 +7,14 @@ h1 {
 .presentation-text {
   display: flex;
   justify-content: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin-top: 100px;
 }/*# sourceMappingURL=mainPage.css.map */

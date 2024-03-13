@@ -1,4 +1,5 @@
 import ProjectCard from "../../components/ProjetCard/ProjectCard";
+import Skills from "../../components/Skills/Skills";
 
 function MainPage() {
   return (
@@ -9,7 +10,16 @@ function MainPage() {
           <a>test de presentation</a>
         </div>
       </section>
-      <ProjectCard />
+      <section>
+        <h1>Projet</h1>
+        <ProjectCard />
+      </section>
+      <section>
+        <h1>Compétence</h1>
+        <article className="skills-container">
+          <Skills />
+        </article>
+      </section>
     </>
   );
 }

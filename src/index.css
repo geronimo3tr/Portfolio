@@ -26,23 +26,61 @@ h1 {
   justify-content: center;
 }
 
-.projectcard {
+.skills-container {
   display: flex;
-  flex-direction: column;
-  width: 350px;
-  background-color: #292929;
+  justify-content: center;
   align-items: center;
 }
 
-.experiance-card {
-  background-color: #5e6a80;
+section {
+  margin-top: 100px;
 }
 
-.top-card {
+.card {
+  width: 390px;
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-top {
+  background-color: blue;
+  width: 100%;
+  margin: 0;
+}
+
+.card-title {
   display: flex;
   justify-content: center;
-  background-color: red;
+  margin: 0;
+}
+
+.card-content {
   width: 100%;
+}
+
+.front-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-bar {
+  background-color: #5b5963;
+  height: 30px;
+  width: 800px;
+}
+
+i {
+  font-size: 25px;
+  margin-left: 8px;
 }
 
 body {
