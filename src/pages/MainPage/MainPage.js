@@ -1,5 +1,6 @@
 import ProjectCard from "../../components/ProjetCard/ProjectCard";
 import Skills from "../../components/Skills/Skills";
+import Form from "../../components/Form/Form";
 
 function MainPage() {
   return (
@@ -7,7 +8,7 @@ function MainPage() {
       <section>
         <h1>Présentation</h1>
         <div className="presentation-text">
-          <a>test de presentation</a>
+          <p>test de presentation</p>
         </div>
       </section>
       <section>
@@ -24,6 +25,9 @@ function MainPage() {
       </section>
       <section>
         <h1>Contact</h1>
+        <div>
+          <Form />
+        </div>
       </section>
     </>
   );

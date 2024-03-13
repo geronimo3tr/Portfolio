@@ -1,0 +1,12 @@
+label {
+  position: absolute;
+  visibility: hidden;
+}
+
+input, textarea {
+  width: 390px;
+}
+
+.message-form {
+  height: 100px;
+}/*# sourceMappingURL=form.css.map */
