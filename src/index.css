@@ -15,6 +15,21 @@ nav li {
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
+  position: relative;
+}
+
+nav li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+nav li:hover::after {
+  width: 100%;
 }
 
 h1 {
@@ -52,6 +67,10 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+.card:hover .card-content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
 
 .card-top {
   display: flex;
@@ -67,18 +86,23 @@ h1 {
 .card-content {
   width: 100%;
   height: 250px;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
 .front-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  backface-visibility: hidden;
 }
 
 .back-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
 
 .card-logo-container {

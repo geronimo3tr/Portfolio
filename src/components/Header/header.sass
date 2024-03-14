@@ -13,3 +13,21 @@ nav
         text-decoration: none
         font-weight: 600 
         cursor: pointer
+        position: relative
+        
+nav li
+  &::after
+    content: ""
+    position: absolute
+    bottom: -5px
+    left: 0
+    width: 0
+    height: 2px
+    background-color: white
+    transition: width 0.3s ease
+
+
+
+  &:hover::after
+    width: 100%
+

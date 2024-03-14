@@ -8,7 +8,6 @@ function ProjectCard() {
           <div className="card-content">
             <div className="front-card">
               <div className="card-top">
-                <h2 className="card-title">top title</h2>
                 <div className="card-logo-container">
                   <img src={kasa} />
                 </div>
@@ -23,7 +22,6 @@ function ProjectCard() {
           <div className="card-content">
             <div className="back-card">
               <div className="card-top">
-                <h2 className="card-title">top title</h2>
                 <div className="card-logo-container">
                   <img src={kasa} />
                 </div>
