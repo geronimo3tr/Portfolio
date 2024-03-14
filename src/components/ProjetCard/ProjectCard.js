@@ -1,3 +1,5 @@
+import kasa from "../../images/LOGO_Kase.png";
+
 function ProjectCard() {
   return (
     <>
@@ -7,6 +9,9 @@ function ProjectCard() {
             <div className="front-card">
               <div className="card-top">
                 <h2 className="card-title">top title</h2>
+                <div className="card-logo-container">
+                  <img src={kasa} />
+                </div>
               </div>
               <div className="card-bottom">
                 <h2>title bottom</h2>
@@ -19,6 +24,9 @@ function ProjectCard() {
             <div className="back-card">
               <div className="card-top">
                 <h2 className="card-title">top title</h2>
+                <div className="card-logo-container">
+                  <img src={kasa} />
+                </div>
               </div>
               <div className="card-bottom">
                 <h2>title bottom</h2>

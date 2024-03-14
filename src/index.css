@@ -1,6 +1,7 @@
 header {
   background-color: black;
   height: 60px;
+  font-family: inter;
 }
 
 nav {
@@ -13,12 +14,14 @@ nav li {
   display: flex;
   text-decoration: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
 h1 {
   display: flex;
   justify-content: center;
-  text-decoration-line: underline;
+  text-decoration: underline;
+  text-underline-offset: 20px;
 }
 
 .presentation-text {
@@ -51,19 +54,19 @@ h1 {
 }
 
 .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: blue;
+  position: relative;
   width: 100%;
   margin: 0;
-}
-
-.card-title {
-  display: flex;
-  justify-content: center;
-  margin: 0;
+  height: 80px;
 }
 
 .card-content {
   width: 100%;
+  height: 250px;
 }
 
 .front-card {
@@ -76,6 +79,23 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  background-color: aqua;
+  border-radius: 50%;
+  height: 100px;
+  position: absolute;
+  bottom: -50px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2509803922);
+}
+
+img {
+  width: 90%;
 }
 
 .skill-bar {
@@ -99,6 +119,7 @@ i {
   align-items: center;
   height: 100%;
   justify-content: space-between;
+  padding-right: 5px;
 }
 
 @keyframes load {
@@ -122,6 +143,12 @@ input, textarea {
   height: 100px;
 }
 
+footer {
+  height: 150px;
+  background-color: black;
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -129,6 +156,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #1C1C1C;
   color: white;
+  font-family: "Katibeh";
 }
 
 code {

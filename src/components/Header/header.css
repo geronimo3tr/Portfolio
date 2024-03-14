@@ -1,6 +1,7 @@
 header {
   background-color: black;
   height: 60px;
+  font-family: inter;
 }
 
 nav {
@@ -13,4 +14,5 @@ nav li {
   display: flex;
   text-decoration: none;
   font-weight: 600;
+  cursor: pointer;
 }/*# sourceMappingURL=header.css.map */

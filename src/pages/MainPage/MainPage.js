@@ -1,6 +1,7 @@
 import ProjectCard from "../../components/ProjetCard/ProjectCard";
 import Skills from "../../components/Skills/Skills";
 import Form from "../../components/Form/Form";
+import Footer from "../../components/Footer/Footer";
 
 function MainPage() {
   return (
@@ -12,15 +13,15 @@ function MainPage() {
         </div>
       </section>
       <section>
-        <h1>Projet</h1>
+        <h1 className="line">Projet</h1>
         <ProjectCard />
       </section>
       <section>
         <h1>Compétence</h1>
         <article className="skills-container">
           <Skills progressLenght={90} color={"#FF5733"} icon={<i className="fab fa-html5" />} text={"90%"} />
-          <Skills progressLenght={90} color={"#264de4"} icon={<i className="fab fa-css3-alt" />} text={"90%"} />
-          <Skills progressLenght={90} color={"#F0DB4F"} icon={<i className="fab fa-js" />} text={"90%"} />
+          <Skills progressLenght={80} color={"#264de4"} icon={<i className="fab fa-css3-alt" />} text={"80%"} />
+          <Skills progressLenght={70} color={"#F0DB4F"} icon={<i className="fab fa-js" />} text={"70%"} />
         </article>
       </section>
       <section>
@@ -29,6 +30,7 @@ function MainPage() {
           <Form />
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -7,19 +7,19 @@
 }
 
 .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: blue;
+  position: relative;
   width: 100%;
   margin: 0;
-}
-
-.card-title {
-  display: flex;
-  justify-content: center;
-  margin: 0;
+  height: 80px;
 }
 
 .card-content {
   width: 100%;
+  height: 250px;
 }
 
 .front-card {
@@ -32,4 +32,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  background-color: aqua;
+  border-radius: 50%;
+  height: 100px;
+  position: absolute;
+  bottom: -50px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2509803922);
+}
+
+img {
+  width: 90%;
 }/*# sourceMappingURL=projectcard.css.map */
