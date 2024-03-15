@@ -1,36 +1,35 @@
-import kasa from "../../images/LOGO_Kase.png";
+import React, { useState } from "react";
 
-function ProjectCard() {
+function ProjectCard(props) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  };
   return (
     <>
-      <div className="cards-container">
-        <div className="card">
-          <div className="card-content">
-            <div className="front-card">
-              <div className="card-top">
-                <div className="card-logo-container">
-                  <img src={kasa} />
-                </div>
-              </div>
-              <div className="card-bottom">
-                <h2>title bottom</h2>
-                <p>description</p>
-                <p>sass</p>
+      <div className={`flip-card ${isFlipped ? "flipped" : ""}`} onClick={handleClick}>
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <div className="card-top">
+              <div className="card-logo">
+                <img src={props.src} />
               </div>
             </div>
+            <div className="card-content">
+              <h2>{props.title}</h2>
+              <p>{props.frontText}</p>
+            </div>
           </div>
-          <div className="card-content">
-            <div className="back-card">
-              <div className="card-top">
-                <div className="card-logo-container">
-                  <img src={kasa} />
-                </div>
+          <div className="flip-card-back">
+            <div className="card-top">
+              <div className="card-logo">
+                <img src={props.src} />
               </div>
-              <div className="card-bottom">
-                <h2>title bottom</h2>
-                <p>description</p>
-                <p>sass</p>
-              </div>
+            </div>
+            <div className="card-content">
+              <h2>{props.title}</h2>
+              <p>{props.backText}</p>
             </div>
           </div>
         </div>

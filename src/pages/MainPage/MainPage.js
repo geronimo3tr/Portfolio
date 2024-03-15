@@ -2,6 +2,7 @@ import ProjectCard from "../../components/ProjetCard/ProjectCard";
 import Skills from "../../components/Skills/Skills";
 import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
+import kasaImg from "../../images/LOGO_Kase.png";
 
 function MainPage() {
   return (
@@ -14,7 +15,7 @@ function MainPage() {
       </section>
       <section>
         <h1 className="line">Projet</h1>
-        <ProjectCard />
+        <ProjectCard src={kasaImg} title={"kasa"} frontText={"This is the front of the card."} backText={"This is the back of the card."} />
       </section>
       <section>
         <h1>Compétence</h1>

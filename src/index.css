@@ -60,66 +60,71 @@ h1 {
   gap: 10px;
 }
 
-.card {
+.flip-card {
+  perspective: 1000px;
   width: 390px;
-  background-color: #292929;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 300px;
 }
-.card:hover .card-content {
-  transform: rotateY(180deg);
-  transition: transform 0.5s;
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
 .card-top {
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: blue;
+  background: black;
   position: relative;
-  width: 100%;
-  margin: 0;
-  height: 80px;
-}
-
-.card-content {
-  width: 100%;
-  height: 250px;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-.front-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  backface-visibility: hidden;
-}
-
-.back-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-}
-
-.card-logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  background-color: aqua;
-  border-radius: 50%;
   height: 100px;
+}
+
+.card-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: -50px;
-  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2509803922);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
 }
 
 img {
+  display: flex;
+  align-items: center;
   width: 90%;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #292929;
+}
+
+.flip-card-back {
+  background-color: #292929;
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 20px;
+  font-family: inter;
 }
 
 .skill-bar {
