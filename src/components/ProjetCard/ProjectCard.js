@@ -35,7 +35,7 @@ function ProjectCard(props) {
                   <i className="fab fa-brands fa-github"></i>
                 </a>
                 <a href={props.hrefWeb}>
-                  <i class="fab fa-brands fa-github"></i>
+                  <i className="fab fa-brands fa-github"></i>
                 </a>
               </div>
             </div>
