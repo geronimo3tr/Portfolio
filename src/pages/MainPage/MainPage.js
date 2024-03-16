@@ -18,9 +18,13 @@ function MainPage() {
         <section className="project-cards-container">
           <ProjectCard
             src={kasaImg}
-            title={"kasa"}
+            alt={"Logo du site kasa"}
+            title={"Kasa"}
             frontText={"This is the front of the card."}
             backText={"This is the back of the card."}
+            color={"#ff6060"}
+            hrefGit={"https://github.com/geronimo3tr/Kasa"}
+            hrefWeb={"https://geronimo3tr.github.io/Kasa/"}
           />
           <ProjectCard
             src={kasaImg}
