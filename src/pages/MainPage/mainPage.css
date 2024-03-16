@@ -24,4 +24,10 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+
+.project-cards-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
 }/*# sourceMappingURL=mainPage.css.map */

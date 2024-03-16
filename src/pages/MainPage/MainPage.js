@@ -15,7 +15,26 @@ function MainPage() {
       </section>
       <section>
         <h1 className="line">Projet</h1>
-        <ProjectCard src={kasaImg} title={"kasa"} frontText={"This is the front of the card."} backText={"This is the back of the card."} />
+        <section className="project-cards-container">
+          <ProjectCard
+            src={kasaImg}
+            title={"kasa"}
+            frontText={"This is the front of the card."}
+            backText={"This is the back of the card."}
+          />
+          <ProjectCard
+            src={kasaImg}
+            title={"kasa"}
+            frontText={"This is the front of the card."}
+            backText={"This is the back of the card."}
+          />
+          <ProjectCard
+            src={kasaImg}
+            title={"kasa"}
+            frontText={"This is the front of the card."}
+            backText={"This is the back of the card."}
+          />
+        </section>
       </section>
       <section>
         <h1>Compétence</h1>
