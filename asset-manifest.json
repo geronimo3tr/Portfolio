@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.a825f85d.css",
+    "main.js": "/Portfolio/static/js/main.02d73fb2.js",
+    "static/js/453.72fb8716.chunk.js": "/Portfolio/static/js/453.72fb8716.chunk.js",
+    "static/media/ninna_prev_ui.png": "/Portfolio/static/media/ninna_prev_ui.757d2203fdaaeb946f4c.png",
+    "static/media/web.png": "/Portfolio/static/media/web.172ab21809756e772559.png",
+    "index.html": "/Portfolio/index.html",
+    "main.a825f85d.css.map": "/Portfolio/static/css/main.a825f85d.css.map",
+    "main.02d73fb2.js.map": "/Portfolio/static/js/main.02d73fb2.js.map",
+    "453.72fb8716.chunk.js.map": "/Portfolio/static/js/453.72fb8716.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a825f85d.css",
+    "static/js/main.02d73fb2.js"
+  ]
+}
