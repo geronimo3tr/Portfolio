@@ -4,17 +4,18 @@ import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
 import kasaImg from "../../images/LOGO_Kase.png";
 import ohmyfood from "../../images/ohmyfood.png";
+import ninna from "../../images/ninna_prev_ui.png";
 
 function MainPage() {
   return (
     <>
-      <section>
+      <section id="Presentation">
         <h1>Présentation</h1>
         <div className="presentation-text">
           <p>test de presentation</p>
         </div>
       </section>
-      <section>
+      <section id="Projet">
         <h1 className="line">Projet</h1>
         <section className="project-cards-container">
           <ProjectCard
@@ -40,17 +41,18 @@ function MainPage() {
             experiences={["HTML", "SASS"]}
           />
           <ProjectCard
-            src={kasaImg}
+            src={ninna}
             title={"Nina Carducci"}
-            frontText={"This is the front of the card."}
-            backText={"This is the back of the card."}
+            frontText={"Optimisation du site et du réferencement de Ninna Carducci à l'aide de lighthouse."}
+            backText={["Optimisation du référencement du site", "Optimisation du code du site", "Création d'un Rich Snippet"]}
             hrefGit={"https://github.com/geronimo3tr/Nina_Carducci"}
             hrefWeb={"https://geronimo3tr.github.io/Nina_Carducci/"}
             color={"#1c6474"}
+            experiences={["HTML", "SASS", "React"]}
           />
         </section>
       </section>
-      <section>
+      <section id="Competence">
         <h1>Compétence</h1>
         <article className="skills-container">
           <Skills progressLenght={90} color={"#FF5733"} icon={<i className="fab fa-html5" />} text={"90%"} />
@@ -58,7 +60,7 @@ function MainPage() {
           <Skills progressLenght={70} color={"#F0DB4F"} icon={<i className="fab fa-js" />} text={"70%"} />
         </article>
       </section>
-      <section>
+      <section id="Contact">
         <h1>Contact</h1>
         <div>
           <Form />

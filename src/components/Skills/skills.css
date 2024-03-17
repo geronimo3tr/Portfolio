@@ -29,4 +29,14 @@ i {
   to {
     width: 100%;
   }
+}
+@media (max-width: 768px) {
+  .skill-bar {
+    width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .skill-bar {
+    width: 300px;
+  }
 }/*# sourceMappingURL=skills.css.map */

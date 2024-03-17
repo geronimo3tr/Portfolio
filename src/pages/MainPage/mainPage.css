@@ -5,6 +5,11 @@ h1 {
   text-underline-offset: 20px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .presentation-text {
   display: flex;
   justify-content: center;
@@ -16,6 +21,8 @@ h1 {
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .form-container {
@@ -24,10 +31,21 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .project-cards-container {
   display: flex;
   gap: 50px;
   justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .project-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=mainPage.css.map */
