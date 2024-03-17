@@ -9,10 +9,13 @@ import ninna from "../../images/ninna_prev_ui.png";
 function MainPage() {
   return (
     <>
-      <section id="Presentation">
+      <section className="presentation-container" id="Presentation">
         <h1>Présentation</h1>
         <div className="presentation-text">
-          <p>test de presentation</p>
+          <p>
+            Passionée d'informatique et de programation, j'ai suivie un BTS SNIR, et une formation Intégratteur Web sur open classroom. Je
+            vous laisse parcourir ce site démontrant certains projets réaliser ainsie que mon CV n'hesiter pas à me contacter.
+          </p>
         </div>
       </section>
       <section id="Projet">
