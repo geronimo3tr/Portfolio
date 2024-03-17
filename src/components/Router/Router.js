@@ -8,7 +8,7 @@ function RouterPortfolio() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/Portfolio" element={<MainPage />} />
         </Routes>
       </Router>
     </div>

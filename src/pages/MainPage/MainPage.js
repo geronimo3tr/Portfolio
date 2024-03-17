@@ -58,6 +58,7 @@ function MainPage() {
           <Skills progressLenght={90} color={"#FF5733"} icon={<i className="fab fa-html5" />} text={"90%"} />
           <Skills progressLenght={80} color={"#264de4"} icon={<i className="fab fa-css3-alt" />} text={"80%"} />
           <Skills progressLenght={70} color={"#F0DB4F"} icon={<i className="fab fa-js" />} text={"70%"} />
+          <Skills progressLenght={70} color={"#61DBFB"} icon={<i class=" fab fa-brands fa-react"></i>} text={"75%"} />
         </article>
       </section>
       <section id="Contact">
