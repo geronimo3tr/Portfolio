@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import web from "../../images/web.png";
 
 function ProjectCard(props) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -19,6 +20,14 @@ function ProjectCard(props) {
             <div className="card-content">
               <h2>{props.title}</h2>
               <p>{props.frontText}</p>
+              <div className="experiences-cards">
+                {props.experiences &&
+                  props.experiences.map((experience, index) => (
+                    <div className="experience" key={index}>
+                      <p>{experience}</p>
+                    </div>
+                  ))}
+              </div>
             </div>
           </div>
           <div className="flip-card-back">
@@ -29,13 +38,15 @@ function ProjectCard(props) {
             </div>
             <div className="card-content">
               <h2>{props.title}</h2>
-              <p>{props.backText}</p>
-              <div className="icon-link-git">
+              <div className="backText-container">
+                {Array.isArray(props.backText) && props.backText.map((backText, index) => <p key={index}>{backText}</p>)}
+              </div>
+              <div className="icon-link">
                 <a href={props.hrefGit}>
                   <i className="fab fa-brands fa-github"></i>
                 </a>
                 <a href={props.hrefWeb}>
-                  <i className="fab fa-brands fa-github"></i>
+                  <img src={web} alt="icone web"></img>
                 </a>
               </div>
             </div>

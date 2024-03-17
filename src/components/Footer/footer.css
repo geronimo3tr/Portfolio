@@ -1,5 +1,12 @@
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 150px;
   background-color: black;
   width: 100%;
+}
+footer i {
+  color: white;
+  font-size: 300%;
 }/*# sourceMappingURL=footer.css.map */

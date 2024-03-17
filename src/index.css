@@ -69,7 +69,7 @@ h1 {
 .flip-card {
   perspective: 1000px;
   width: 390px;
-  height: 300px;
+  height: 350px;
 }
 
 .flip-card-inner {
@@ -115,12 +115,7 @@ img {
   backface-visibility: hidden;
 }
 
-.flip-card-front {
-  background-color: #292929;
-}
-
 .flip-card-back {
-  background-color: #292929;
   transform: rotateY(180deg);
 }
 
@@ -130,13 +125,51 @@ img {
   align-items: center;
   padding: 50px 20px 20px;
   font-family: inter;
+  background-color: #292929;
+  text-align: center;
 }
 
-.icon-link-git {
+.icon-link {
   display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  margin-top: 10px;
 }
-.icon-link-git i {
+.icon-link i {
   color: white;
+}
+.icon-link img {
+  width: 38px;
+}
+
+.experience {
+  background-color: grey;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 50px;
+}
+.experience p {
+  margin: 0;
+}
+
+.experiences-cards {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.backText-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  gap: 5px;
+}
+.backText-container p {
+  margin: 0;
 }
 
 .skill-bar {
@@ -192,9 +225,16 @@ input, textarea {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 150px;
   background-color: black;
   width: 100%;
+}
+footer i {
+  color: white;
+  font-size: 300%;
 }
 
 body {

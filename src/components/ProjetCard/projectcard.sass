@@ -1,7 +1,7 @@
 .flip-card
   perspective: 1000px
   width: 390px
-  height: 300px
+  height: 350px
 
 .flip-card-inner
   width: 100%
@@ -41,12 +41,8 @@ img
   position: absolute
   backface-visibility: hidden
 
-.flip-card-front
-  background-color: #292929
-  
 
 .flip-card-back
-  background-color: #292929
   transform: rotateY(180deg)
 
 .card-content
@@ -55,11 +51,43 @@ img
   align-items: center
   padding: 50px 20px 20px
   font-family: inter
+  background-color: #292929
+  text-align: center
 
-.icon-link-git
+.icon-link
   display: flex
+  justify-content: center
+  align-content: center
+  gap: 30px
+  margin-top: 10px 
   i
     color: white
+  img
+    width: 38px 
+
+.experience
+  background-color: grey 
+  width: 15%
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 5px 
+  width: 50px
+  p
+    margin: 0
+
+.experiences-cards
+  display: flex
+  gap: 10px
+  margin-top: 50px
+
+.backText-container
+  display: flex
+  flex-direction: column
+  margin-bottom: 15px
+  gap: 5px
+  p
+    margin: 0
 
 
 
