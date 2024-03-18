@@ -1,16 +1,13 @@
 import ProjectCard from "../../components/ProjetCard/ProjectCard";
 import Skills from "../../components/Skills/Skills";
 import Form from "../../components/Form/Form";
-import Footer from "../../components/Footer/Footer";
 import kasaImg from "../../images/LOGO_Kase.png";
 import ohmyfood from "../../images/ohmyfood.png";
 import ninna from "../../images/ninna_prev_ui.png";
-import Header from "../../components/Header/Header";
 
 function MainPage() {
   return (
     <>
-      <Header />
       <section className="presentation-container" id="Presentation">
         <h1>Présentation</h1>
         <div className="presentation-text">
@@ -72,7 +69,6 @@ function MainPage() {
           <Form />
         </div>
       </section>
-      <Footer />
     </>
   );
 }

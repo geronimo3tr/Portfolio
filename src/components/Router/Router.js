@@ -1,16 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainPage from "../../pages/MainPage/MainPage";
-import Error from "../../pages/Error/Error";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 function RouterPortfolio() {
   return (
     <div>
+      <Header />
       <Router>
         <Routes>
           <Route path="/Portfolio" element={<MainPage />} />
-          <Route path="/*" element={<Error />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }
