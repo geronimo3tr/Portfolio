@@ -17,7 +17,9 @@ function Header() {
           <a href="#Contact">Contact </a>
         </li>
         <li>
-          <a href="https://gold-sisely-44.tiiny.site/">CV</a>
+          <a href="https://gold-sisely-44.tiiny.site/" target="_blank">
+            CV
+          </a>
         </li>
       </nav>
     </header>

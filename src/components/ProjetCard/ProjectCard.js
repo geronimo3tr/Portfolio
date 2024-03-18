@@ -7,6 +7,10 @@ function ProjectCard(props) {
   const handleClick = () => {
     setIsFlipped(!isFlipped);
   };
+
+  const handleLinkClick = (e) => {
+    e.stopPropagation();
+  };
   return (
     <>
       <div className={`flip-card ${isFlipped ? "flipped" : ""}`} onClick={handleClick}>
@@ -42,10 +46,10 @@ function ProjectCard(props) {
                 {Array.isArray(props.backText) && props.backText.map((backText, index) => <p key={index}>{backText}</p>)}
               </div>
               <div className="icon-link">
-                <a href={props.hrefGit}>
+                <a href={props.hrefGit} target="_blank" onClick={handleLinkClick}>
                   <i className="fab fa-brands fa-github"></i>
                 </a>
-                <a href={props.hrefWeb}>
+                <a href={props.hrefWeb} target="_blank" onClick={handleLinkClick}>
                   <img src={web} alt="icone web"></img>
                 </a>
               </div>

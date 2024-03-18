@@ -5,16 +5,18 @@ import Footer from "../../components/Footer/Footer";
 import kasaImg from "../../images/LOGO_Kase.png";
 import ohmyfood from "../../images/ohmyfood.png";
 import ninna from "../../images/ninna_prev_ui.png";
+import Header from "../../components/Header/Header";
 
 function MainPage() {
   return (
     <>
+      <Header />
       <section className="presentation-container" id="Presentation">
         <h1>Présentation</h1>
         <div className="presentation-text">
           <p>
-            Passionée d'informatique et de programation, j'ai suivie un BTS SNIR, et une formation Intégratteur Web sur open classroom. Je
-            vous laisse parcourir ce site démontrant certains projets réaliser ainsie que mon CV n'hesiter pas à me contacter.
+            Passioné d'informatique et de programmation, j'ai suivi un BTS SNIR, et une formation Intégrateur Web sur OpenClassrooms. Je
+            vous laisse parcourir ce site démontrant certains projets réalisés ainsi que mon CV, n'hésitez pas à me contacter.
           </p>
         </div>
       </section>
@@ -25,8 +27,8 @@ function MainPage() {
             src={kasaImg}
             alt={"Logo du site kasa"}
             title={"Kasa"}
-            frontText={"Création d'un site web de location immobiliere à l'aide de javascript et react."}
-            backText={["Utilisation de React", "Utilisation de JavaScript", "Utilisation de plusieurs composant"]}
+            frontText={"Création d'un site web de location immobilière à l'aide de Javascript et react."}
+            backText={["Utilisation de React", "Utilisation de JavaScript", "Utilisation de plusieurs composants"]}
             color={"#ff6060"}
             hrefGit={"https://github.com/geronimo3tr/Kasa"}
             hrefWeb={"https://geronimo3tr.github.io/Kasa/"}
@@ -36,7 +38,7 @@ function MainPage() {
             src={ohmyfood}
             alt={"Logo du site Oh my food"}
             title={"OhMyFood"}
-            frontText={"Création d'un site web comportant different restaurants et menus."}
+            frontText={"Création d'un site web comportant différents restaurants et menus."}
             backText={["Utilisation de SASS", "Utilisation d'animation", "Site réaliser en mobile First"]}
             hrefGit={"https://github.com/geronimo3tr/OhMyFood"}
             hrefWeb={"https://geronimo3tr.github.io"}
@@ -46,7 +48,7 @@ function MainPage() {
           <ProjectCard
             src={ninna}
             title={"Nina Carducci"}
-            frontText={"Optimisation du site et du réferencement de Ninna Carducci à l'aide de lighthouse."}
+            frontText={"Optimisation du site et du référencement de Ninna Carducci à l'aide de lighthouse."}
             backText={["Optimisation du référencement du site", "Optimisation du code du site", "Création d'un Rich Snippet"]}
             hrefGit={"https://github.com/geronimo3tr/Nina_Carducci"}
             hrefWeb={"https://geronimo3tr.github.io/Nina_Carducci/"}
@@ -61,7 +63,7 @@ function MainPage() {
           <Skills progressLenght={90} color={"#FF5733"} icon={<i className="fab fa-html5" />} text={"90%"} />
           <Skills progressLenght={80} color={"#264de4"} icon={<i className="fab fa-css3-alt" />} text={"80%"} />
           <Skills progressLenght={70} color={"#F0DB4F"} icon={<i className="fab fa-js" />} text={"70%"} />
-          <Skills progressLenght={70} color={"#61DBFB"} icon={<i class=" fab fa-brands fa-react"></i>} text={"75%"} />
+          <Skills progressLenght={75} color={"#61DBFB"} icon={<i className=" fab fa-brands fa-react"></i>} text={"75%"} />
         </article>
       </section>
       <section id="Contact">
