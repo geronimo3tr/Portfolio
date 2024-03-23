@@ -59,6 +59,7 @@ function MainPage() {
         <article className="skills-container">
           <Skills progressLenght={90} color={"#FF5733"} icon={<i className="fab fa-html5" />} text={"90%"} />
           <Skills progressLenght={80} color={"#264de4"} icon={<i className="fab fa-css3-alt" />} text={"80%"} />
+          <Skills progressLenght={80} color={"#cc6699"} icon={<i class="fab fa-sass"></i>} text={"80%"} />
           <Skills progressLenght={70} color={"#F0DB4F"} icon={<i className="fab fa-js" />} text={"70%"} />
           <Skills progressLenght={75} color={"#61DBFB"} icon={<i className=" fab fa-brands fa-react"></i>} text={"75%"} />
         </article>
